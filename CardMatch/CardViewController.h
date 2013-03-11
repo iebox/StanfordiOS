@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlayingDeckCard.h"
+
 
 @interface CardViewController : UIViewController
+
+@property (nonatomic,strong) PlayingDeckCard *currentDeck;
 
 @end

@@ -9,29 +9,42 @@
 #import "CardViewController.h"
 
 @interface CardViewController ()
-//@property (weak, nonatomic) IBOutlet UILabel *flipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flipLabel;
 @property (nonatomic) int flipCount;
 
 @end
 
 @implementation CardViewController
+
 - (IBAction)flipCard:(UIButton *)sender {
-//    if (sender.isSelected) {
-//        //[sender setSelected:NO];
-//        sender.selected = NO;
-//    } else {
-////        [sender setSelected:YES];
-//        sender.selected = YES;
-//    }
-    sender.selected = !sender.isSelected;
+    PlayingDeckCard *pdc = [[PlayingDeckCard alloc] init];
+    
+    if (sender.isSelected) {
+        //[sender setSelected:NO];
+        //sender.titleLabel.text = [NSString stringWithFormat:@"%@", [pdc.drawRandomCard contents]];
+        //NSLog(@"%@", sender.titleLabel.text);
+        sender.selected = NO;
+
+       
+    } else {
+//        [sender setSelected:YES];
+        sender.selected = YES;
+
+    }
+    //sender.selected = !sender.isSelected;
     self.flipCount++;
+    
+    [sender setTitle:[pdc.drawRandomCard contents]forState:NO];
+//    [sender setTitle:@"" forState:YES];
+
+    
+    
     //self.flipLabel.text = [NSString stringWithFormat:@"Flip Counts: %d", self.flipCount];
 }
 
 -(void)setFlipCount:(int)flipCount {
     _flipCount = flipCount;
-    self.flipLabel.text = [NSString stringWithFormat:@"Flip Counts: %d", self.flipCount];
+//    self.flipLabel.text = [NSString stringWithFormat:@"Flip Counts: %d", self.flipCount];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -46,6 +59,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //_currentDeck = [[PlayingDeckCard alloc] init];
+
 	// Do any additional setup after loading the view.
 }
 

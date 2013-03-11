@@ -11,6 +11,8 @@
 		275E190116EBBDE0002285C3 /* FlipCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275E190016EBBDE0002285C3 /* FlipCardViewController.m */; };
 		27976ADB16ECD14800B286E9 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 27976ADA16ECD14800B286E9 /* Card.m */; };
 		27976ADE16ECD18700B286E9 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 27976ADD16ECD18700B286E9 /* Deck.m */; };
+		27E90B0516EDA09B00E72BFE /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E90B0416EDA09B00E72BFE /* PlayingCard.m */; };
+		27E90B0816EDA9F500E72BFE /* PlayingDeckCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E90B0716EDA9F500E72BFE /* PlayingDeckCard.m */; };
 		27FCE19116E9044600EDD09D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FCE19016E9044600EDD09D /* UIKit.framework */; };
 		27FCE19316E9044600EDD09D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FCE19216E9044600EDD09D /* Foundation.framework */; };
 		27FCE19516E9044600EDD09D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FCE19416E9044600EDD09D /* CoreGraphics.framework */; };
@@ -42,6 +44,10 @@
 		27976ADA16ECD14800B286E9 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = RPGOverview/Matchismo/Model/Card.m; sourceTree = "<group>"; };
 		27976ADC16ECD18700B286E9 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = RPGOverview/Matchismo/Model/Deck.h; sourceTree = "<group>"; };
 		27976ADD16ECD18700B286E9 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = RPGOverview/Matchismo/Model/Deck.m; sourceTree = "<group>"; };
+		27E90B0316EDA09B00E72BFE /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = RPGOverview/Matchismo/Model/PlayingCard.h; sourceTree = "<group>"; };
+		27E90B0416EDA09B00E72BFE /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = RPGOverview/Matchismo/Model/PlayingCard.m; sourceTree = "<group>"; };
+		27E90B0616EDA9F500E72BFE /* PlayingDeckCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingDeckCard.h; path = RPGOverview/Matchismo/Model/PlayingDeckCard.h; sourceTree = "<group>"; };
+		27E90B0716EDA9F500E72BFE /* PlayingDeckCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingDeckCard.m; path = RPGOverview/Matchismo/Model/PlayingDeckCard.m; sourceTree = "<group>"; };
 		27FCE18D16E9044600EDD09D /* RPGOverview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGOverview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FCE19016E9044600EDD09D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27FCE19216E9044600EDD09D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,8 +101,12 @@
 				275E190016EBBDE0002285C3 /* FlipCardViewController.m */,
 				27976AD916ECD14800B286E9 /* Card.h */,
 				27976ADA16ECD14800B286E9 /* Card.m */,
+				27E90B0316EDA09B00E72BFE /* PlayingCard.h */,
+				27E90B0416EDA09B00E72BFE /* PlayingCard.m */,
 				27976ADC16ECD18700B286E9 /* Deck.h */,
 				27976ADD16ECD18700B286E9 /* Deck.m */,
+				27E90B0616EDA9F500E72BFE /* PlayingDeckCard.h */,
+				27E90B0716EDA9F500E72BFE /* PlayingDeckCard.m */,
 			);
 			name = CardGame;
 			sourceTree = "<group>";
@@ -258,6 +268,8 @@
 				275E190116EBBDE0002285C3 /* FlipCardViewController.m in Sources */,
 				27976ADB16ECD14800B286E9 /* Card.m in Sources */,
 				27976ADE16ECD18700B286E9 /* Deck.m in Sources */,
+				27E90B0516EDA09B00E72BFE /* PlayingCard.m in Sources */,
+				27E90B0816EDA9F500E72BFE /* PlayingDeckCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
